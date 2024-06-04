@@ -5,7 +5,7 @@
 ## Sobre mí
 
 - 👨‍🎓 Actualmente estoy estudiando en Universidad de Málaga.
-- 💻 Me interesa [el desarrollo web, inteligencia artificial, aprendizaje automático, etc.
+- 💻 Me interesa el desarrollo web, inteligencia artificial, aprendizaje automático, etc.
 - 🌱 Estoy aprendiendo constantemente y mejorando mis habilidades en diferentes áreas específicas.
 - 📫 Puedes contactarme a través de mi Instagram.
 
