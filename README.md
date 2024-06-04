@@ -1,13 +1,13 @@
 # ¡Hola! Soy [Alberto Montero Solera]
 
-¡Bienvenido a mi perfil de GitHub! Soy un estudiante de [ingeniería de la Salud, especialidad en Bioinformática] apasionado por la tecnología y el desarrollo de software.
+¡Bienvenido a mi perfil de GitHub! Soy un estudiante de Ingeniería de la Salud, especialidad en Bioinformática apasionado por la tecnología y el desarrollo de software.
 
 ## Sobre mí
 
-- 👨‍🎓 Actualmente estoy estudiando en [Universidad de Málaga].
-- 💻 Me interesa [el desarrollo web, inteligencia artificial, aprendizaje automático, etc.].
-- 🌱 Estoy aprendiendo constantemente y mejorando mis habilidades en [diferentes áreas específicas].
-- 📫 Puedes contactarme a través de mi [Instagram].
+- 👨‍🎓 Actualmente estoy estudiando en Universidad de Málaga.
+- 💻 Me interesa [el desarrollo web, inteligencia artificial, aprendizaje automático, etc.
+- 🌱 Estoy aprendiendo constantemente y mejorando mis habilidades en diferentes áreas específicas.
+- 📫 Puedes contactarme a través de mi Instagram.
 
 ## Proyectos destacados
 
