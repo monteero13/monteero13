@@ -1,4 +1,4 @@
-# ¡Hola! Soy [Alberto Montero Solera]
+# ¡Hola! Soy Alberto Montero Solera
 
 ¡Bienvenido a mi perfil de GitHub! Soy un estudiante de Ingeniería de la Salud, especialidad en Bioinformática apasionado por la tecnología y el desarrollo de software.
 
