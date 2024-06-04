@@ -13,7 +13,7 @@
 
 Aquí están algunos de los proyectos en los que he estado trabajando:
 
-- [Proyecto Software Avanzada](): Proyecto de prácticas de software avanzada.
+- [Proyecto Software Avanzada](https://github.com/monteero13/isa2024-healthcalc): Proyecto de prácticas de software avanzada.
 
 ## Contacto
 
