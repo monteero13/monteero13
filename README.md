@@ -15,6 +15,7 @@ Aquí están algunos de los proyectos en los que he estado trabajando:
 
 - [Proyecto Software Avanzada](https://github.com/monteero13/isa2024-healthcalc): Proyecto de prácticas de software avanzada.
 - [Proyecto Biología de Sistemas](https://github.com/monteero13/project_template): Trabajo de investigación de redes biológicas con gen Aniridia.
+- [Proyecto Machine Learning](https://github.com/monteero13/Application of clustering methods to sporulation yeast microarray data): Laboratorio 1. Application of clustering methods to sporulation yeast microarray data.
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/npcalberto) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/albeertomontero_) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@albeertomontero_) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/Albertomonteero) 
