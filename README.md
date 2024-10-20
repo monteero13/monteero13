@@ -27,9 +27,6 @@ Aquí están algunos de los proyectos en los que he estado trabajando:
 ![](https://github-readme-streak-stats.herokuapp.com/?user=monteero13&theme=dark&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=monteero13&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=monteero13&theme=nord&no-frame=false&no-bg=true&margin-w=4)
-
 ### 😂 Random Dev Meme
 <img src='https://memer-new.vercel.app/' style="height: 400px;"/>
 
