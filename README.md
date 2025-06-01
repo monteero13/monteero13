@@ -12,7 +12,7 @@
 
 Aquí están algunos de los proyectos en los que he estado trabajando:
 
-- [Proyecto Minería de Datos](https://github.com/monteero13/Mineria de Datos): Trabajo de análisis y ciencia de datos acerca de un conjunto de datos para la predicción de la respuesta completa patológica en tratamientos neoadyuvante en pacientes con cáncer de mama.
+- [Proyecto Minería de Datos](https://github.com/monteero13/MineriadeDatos): Trabajo de análisis y ciencia de datos acerca de un conjunto de datos para la predicción de la respuesta completa patológica en tratamientos neoadyuvante en pacientes con cáncer de mama.
 - [Proyecto Software Avanzada](https://github.com/monteero13/isa2024-healthcalc): Proyecto de prácticas de software avanzada.
 - [Proyecto Biología de Sistemas](https://github.com/monteero13/project_template): Trabajo de investigación de redes biológicas con gen Aniridia.
 - [Proyecto Machine Learning](https://github.com/monteero13/Application-of-clustering-methods-to-sporulation-yeast-microarray-data.git): Laboratorio 1. Application of clustering methods to sporulation yeast microarray data.
