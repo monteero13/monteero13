@@ -20,7 +20,6 @@ Aquí están algunos de los proyectos en los que he estado trabajando:
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/albeertomontero_) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@albeertomontero_) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/Albertomonteero) 
----
+
 [![](https://visitcount.itsvg.in/api?id=monteero13&icon=0&color=4)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
