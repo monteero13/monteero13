@@ -18,6 +18,7 @@ Aquí están algunos de los proyectos en los que he estado trabajando:
 - [Semanti-View](https://github.com/monteero13/Semanti-View): Proyecto de web semántica: conversor de JSON a HTML, diseño de ontologías con Protégé y consultas SPARQL.
 - [No-BNo-Good](https://github.com/monteero13/No-BNo-Good): Pipeline ETL en Python para limpiar, skolemizar y transformar grafos RDF (JSON-LD), eliminando BNodes y procesando en lotes.
 - [isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc): Proyecto de prácticas para la asignatura de Software Avanzado.
+- [edowl](https://github.com/monteero13/edowl): Herramienta de automatización que valida y transforma catálogos de datos JSON en Grafos de Conocimiento RDF compatibles con estándares DCAT, IDS y ODRL.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/albeertomontero_) [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@albeertomontero_) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/Albertomonteero) 
