@@ -6,7 +6,7 @@
 
 <p>
   Go have a look to my portfolio -> 
-  <a href="https://portfolio-alberto-montero.vercel.app">Pulsa aquí</a>
+  <a href="https://portfolio-alberto-montero.vercel.app">Click here</a>
 </p>
 
 Welcome to my GitHub profile! I'm a Health Engineering student, specializing in Bioinformatics, passionate about technology and software development.
