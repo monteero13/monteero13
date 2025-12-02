@@ -4,7 +4,7 @@
 
 # Hi! I'm Alberto Montero Solera
 
-<a href=https://portfolio-alberto-montero.vercel.app />
+<p>Go have a look to my portfolio -> <a href=https://portfolio-alberto-montero.vercel.app /></p>
 
 Welcome to my GitHub profile! I'm a Health Engineering student, specializing in Bioinformatics, passionate about technology and software development.
 
