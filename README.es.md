@@ -76,15 +76,6 @@ Ya sea diseñando complejas *pipelines* ETL para Grafos de Conocimiento, desarro
 
 <br> 
 
-## 📊 Estadísticas de GitHub 
-
-<div align="center"> 
-  <img src="https://github-readme-stats.vercel.app/api?username=monteero13&show_icons=true&theme=transparent&hide_border=true&title_color=005DAA&text_color=333333&icon_color=005DAA" alt="Estadísticas de GitHub de Alberto" width="48%" /> 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=monteero13&layout=compact&theme=transparent&hide_border=true&title_color=005DAA&text_color=333333" alt="Lenguajes Principales" width="48%" /> 
-</div> 
-
-<br> 
-
 ## 🔗 Conectemos 
 
 <div align="center"> 
@@ -98,11 +89,3 @@ Ya sea diseñando complejas *pipelines* ETL para Grafos de Conocimiento, desarro
     <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" /> 
   </a> 
 </div> 
-
-<br> 
-
-<div align="center"> 
-  <a href="https://visitcount.itsvg.in"> 
-    <img src="https://visitcount.itsvg.in/api?id=monteero13&icon=0&color=0" alt="Vistas del Perfil" /> 
-  </a> 
-</div>
