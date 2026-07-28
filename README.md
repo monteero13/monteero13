@@ -10,10 +10,10 @@
   
   <p> 
     Building the bridge between complex data, semantic web, and human health. <br> 
-    Based at the <b>University of Málaga</b> 🇪🇸 
+    Based at the <b>University of Málaga</b>
   </p> 
 
-  <a href="https://albertomontero.is-a.dev/en"> 
+  <a href="https://albertomontero.is-a.dev"> 
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a> 
 </div> 
@@ -72,53 +72,14 @@ Whether I'm designing complex ETL pipelines for Knowledge Graphs, developing int
 ### 💻 Software Development 
 
 - **[Alcolens](https://github.com/monteero13/Alcolens)**: Full Stack SaaS platform designed for patient management and auditing, featuring secure authentication and real-time data visualization.
-- **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc)**: Software Engineering project focusing on applied health calculations and robust system design.  
+- **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc)**: Software Engineering project focusing on applied health calculations and robust system design. 
 
 <br> 
 
 ## 🔗 Let's Connect 
 
 <div align="center"> 
-  <a href="https://x.com/Albertomonteero"> 
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /> 
+  <a href="https://es.linkedin.com/in/albeertomonterosolera"> 
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /> 
   </a> 
-  <a href="https://instagram.com/albeertomontero_"> 
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /> 
-  </a> 
-  <a href="https://tiktok.com/@albeertomontero_"> 
-    <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" /> 
-  </a> 
-</div> 
-
-
-</div>[🇪🇸 Versión en Español](README.es.md)
-
-# Alberto Montero
-**Health Engineering Student | Bioinformatics & Full Stack Developer**
-
-Building the bridge between complex data, semantic web, and human health at the University of Málaga. Focus on Software Engineering, AI, and Bioinformatics.
-
-[Website](https://albertomontero.is-a.dev) • [X / Twitter](https://x.com/Albertomonteero) • [Instagram](https://instagram.com/albeertomontero_) • [TikTok](https://tiktok.com/@albeertomontero_)
-
----
-
-## Tech Stack
-**Languages & Frameworks:** Python, TypeScript, React, Next.js, Node.js  
-**Data & Architecture:** Semantic Web (RDF / SPARQL), ETL Pipelines, Git
-
----
-
-## Featured Projects
-
-### Semantic Web & Data Engineering
-* **[edowl](https://github.com/monteero13/edowl):** Automation tool validating JSON catalogs into RDF Knowledge Graphs (DCAT, IDS, ODRL).
-* **[No-BNo-Good](https://github.com/monteero13/No-BNo-Good):** Python ETL pipeline to clean and batch-process complex RDF graphs (JSON-LD).
-* **[Semanti-View](https://github.com/monteero13/Semanti-View):** Dynamic JSON-to-HTML conversion, custom ontology design, and SPARQL querying.
-
-### Bioinformatics & Data Science
-* **[Neo-Biotic](https://github.com/monteero13/Neo-Biotic):** Data Mining analysis on the impact of antibiotics on breast cancer treatments.
-* **[Aniridia-SysBio](https://github.com/monteero13/Aniridia-SysBio):** Systems Biology research on biological networks surrounding Aniridia and the PAX6 gene.
-* **[KardiaProject](https://github.com/monteero13/KardiaProject):** Comprehensive data analysis and predictive modeling for cardiovascular health.
-
-### Software Development
-* **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc):** Applied health calculations and robust system design.
+</div>
