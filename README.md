@@ -72,16 +72,7 @@ Whether I'm designing complex ETL pipelines for Knowledge Graphs, developing int
 ### 💻 Software Development 
 
 - **[Alcolens](https://github.com/monteero13/Alcolens)**: Full Stack SaaS platform designed for patient management and auditing, featuring secure authentication and real-time data visualization.
-- **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc)**: Software Engineering project focusing on applied health calculations and robust system design. 
-
-<br> 
-
-## 📊 GitHub Stats 
-
-<div align="center"> 
-  <img src="https://github-readme-stats.vercel.app/api?username=monteero13&show_icons=true&theme=transparent&hide_border=true&title_color=005DAA&text_color=333333&icon_color=005DAA" alt="Alberto's GitHub Stats" width="48%" /> 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=monteero13&layout=compact&theme=transparent&hide_border=true&title_color=005DAA&text_color=333333" alt="Top Languages" width="48%" /> 
-</div> 
+- **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc)**: Software Engineering project focusing on applied health calculations and robust system design.  
 
 <br> 
 
