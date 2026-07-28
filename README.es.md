@@ -10,7 +10,7 @@
   
   <p> 
     Construyendo el puente entre datos complejos, la web semántica y la salud humana. <br> 
-    Con base en la <b>Universidad de Málaga</b> 🇪🇸 
+    Con base en la <b>Universidad de Málaga</b>
   </p> 
 
   <a href="https://albertomontero.is-a.dev"> 
