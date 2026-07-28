@@ -79,13 +79,7 @@ Ya sea diseñando complejas *pipelines* ETL para Grafos de Conocimiento, desarro
 ## 🔗 Conectemos 
 
 <div align="center"> 
-  <a href="https://x.com/Albertomonteero"> 
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /> 
+  <a href="https://es.linkedin.com/in/albeertomonterosolera"> 
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /> 
   </a> 
-  <a href="https://instagram.com/albeertomontero_"> 
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /> 
-  </a> 
-  <a href="https://tiktok.com/@albeertomontero_"> 
-    <img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" /> 
-  </a> 
-</div> 
+</div>
