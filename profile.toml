@@ -1,0 +1,246 @@
+# =============================================================================
+#  profile.toml — la única fuente de verdad del README del perfil.
+#
+#  Edita este archivo y ejecuta:      python scripts/build.py
+#  (o haz push: el workflow .github/workflows/profile.yml lo regenera solo)
+#  Vista previa local sin red:        python scripts/build.py --offline
+#                                     y abre preview.html
+#
+#  Textos traducibles: cualquier texto puede ser
+#     una cadena simple      ->  "Hola"            (igual en todos los idiomas)
+#     o una tabla por idioma ->  { en = "Hi", es = "Hola" }
+# =============================================================================
+
+[profile]
+username = "monteero13"
+name     = "Alberto Montero"
+
+# El primero genera README.md; el resto README.<código>.md
+languages      = ["en", "es"]
+language_names = { en = "English", es = "Español" }
+
+# Orden de las secciones. Quita una línea para ocultarla.
+sections = ["banner", "links", "about", "stack", "skills", "projects", "vitals", "footer"]
+
+# -----------------------------------------------------------------------------
+#  Estilo. Minimalista: fondo nativo de GitHub, tipografía mono, un tono
+#  crema para lo importante y un único acento para los pequeños detalles.
+# -----------------------------------------------------------------------------
+[style]
+# Detalle que acompaña al título de cada sección: "helix", "pulse" o "none".
+# Se puede cambiar por sección en [headings.<sección>].motif
+heading_motif = "helix"
+numbered      = true        # "01 · about", "02 · stack"...
+
+[theme]
+font = "ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
+mono = "ui-monospace,SFMono-Regular,'JetBrains Mono','Cascadia Code',Consolas,monospace"
+
+[theme.dark]
+strong = "#FFF8E8"   # crema del banner: títulos, cifras
+text   = "#C9D1D9"
+muted  = "#7D8590"
+line   = "#21262D"
+faint  = "#30363D"
+accent = "#F2777A"   # coral: sólo pulso, punto "live" y detalles
+
+[theme.light]
+strong = "#1F2328"
+text   = "#424A53"
+muted  = "#6E7781"
+line   = "#D8DEE4"
+faint  = "#C4CCD4"
+accent = "#CF4A4A"
+
+# -----------------------------------------------------------------------------
+#  Banner: imagen ya hecha (GIF/PNG/SVG). `light` es opcional.
+# -----------------------------------------------------------------------------
+[banner]
+dark  = "assets/banner/banner-dark.gif"
+# light = "assets/banner/banner-light.gif"
+alt   = "Alberto Montero — Health Engineering · Universidad de Málaga"
+
+# -----------------------------------------------------------------------------
+#  Enlaces: una línea de texto discreta bajo el banner
+# -----------------------------------------------------------------------------
+[[links]]
+label = "linkedin"
+url   = "https://es.linkedin.com/in/albeertomonterosolera"
+
+[[links]]
+label = "portfolio"
+url   = "https://albertomontero.is-a.dev"
+
+# [[links]]
+# label = "email"
+# url   = "mailto:tu@correo.com"
+
+[links_options]
+language_switch = true     # añade el enlace al README en el otro idioma
+visitor_counter = false
+
+# -----------------------------------------------------------------------------
+#  Sobre mí (Markdown)
+# -----------------------------------------------------------------------------
+[about]
+intro.en = """
+Health Engineering student and full stack developer from Málaga.
+I turn raw, messy data into knowledge that is useful for people's health."""
+intro.es = """
+Estudiante de Ingeniería de la Salud y desarrollador full stack desde Málaga.
+Convierto datos en bruto en conocimiento útil para la salud de las personas."""
+
+[[about.points]]
+text.en = "**Now** — Health Engineering at the University of Málaga, next: Master's in Software Engineering & AI."
+text.es = "**Ahora** — Ingeniería de la Salud en la Universidad de Málaga; después, Máster en Ingeniería del Software e IA."
+
+[[about.points]]
+text.en = "**Bio** — data mining, systems biology and predictive models for cancer, genetics and cardiology."
+text.es = "**Bio** — minería de datos, biología de sistemas y modelos predictivos en cáncer, genética y cardiología."
+
+[[about.points]]
+text.en = "**Graphs** — ETL pipelines into RDF knowledge graphs · DCAT, IDS, ODRL · SPARQL."
+text.es = "**Grafos** — pipelines ETL hacia grafos de conocimiento RDF · DCAT, IDS, ODRL · SPARQL."
+
+[[about.points]]
+text.en = "**Web** — SaaS interfaces with secure auth and real-time data visualization."
+text.es = "**Web** — interfaces SaaS con autenticación segura y visualización en tiempo real."
+
+# -----------------------------------------------------------------------------
+#  Stack: se dibuja como un pequeño "manifiesto" en mono, clave → valores
+# -----------------------------------------------------------------------------
+[[stack]]
+key   = { en = "lang", es = "lenguajes" }
+items = ["python", "r", "typescript", "sparql", "cypher", "sql"]
+
+[[stack]]
+key   = { en = "ai / data", es = "ia / datos" }
+items = ["pytorch", "tensorflow", "langchain", "pandas"]
+
+[[stack]]
+key   = { en = "semantic", es = "semántica" }
+items = ["rdf", "json-ld", "owl", "protégé"]
+
+[[stack]]
+key   = { en = "web", es = "web" }
+items = ["react", "next.js", "tailwind", "node"]
+
+[[stack]]
+key   = { en = "storage", es = "datos" }
+items = ["neo4j", "qdrant", "postgres"]
+
+[[stack]]
+key   = { en = "ops", es = "ops" }
+items = ["docker", "linux", "git"]
+
+# -----------------------------------------------------------------------------
+#  Habilidades: autoevaluación 0-100, agrupadas por "cromosoma"
+# -----------------------------------------------------------------------------
+[[skills]]
+group = { en = "data & ai", es = "datos e ia" }
+items = [
+  { label = "Python",           level = 90 },
+  { label = "R",                level = 72 },
+  { label = "Machine Learning", level = 75 },
+  { label = "Data Mining",      level = 80 },
+]
+
+[[skills]]
+group = { en = "semantic web", es = "web semántica" }
+items = [
+  { label = "RDF / JSON-LD",    level = 85 },
+  { label = "SPARQL",           level = 78 },
+  { label = { en = "Ontologies (OWL)", es = "Ontologías (OWL)" }, level = 70 },
+  { label = "Neo4j / Cypher",   level = 66 },
+]
+
+[[skills]]
+group = { en = "bioinformatics", es = "bioinformática" }
+items = [
+  { label = { en = "Systems biology", es = "Biología de sistemas" }, level = 72 },
+  { label = { en = "Genomic analysis", es = "Análisis genómico" }, level = 68 },
+  { label = { en = "Biostatistics", es = "Bioestadística" }, level = 74 },
+]
+
+[[skills]]
+group = { en = "software", es = "software" }
+items = [
+  { label = "TypeScript",       level = 78 },
+  { label = "React / Next.js",  level = 76 },
+  { label = "SQL",              level = 72 },
+  { label = "Docker / Linux",   level = 70 },
+]
+
+# -----------------------------------------------------------------------------
+#  Proyectos. Estrellas y lenguaje vienen de la API en cada build. Un repo
+#  privado se dibuja igual con estos datos, sin enlace (salvo que pongas `url`).
+# -----------------------------------------------------------------------------
+[[projects]]
+repo = "edowl"
+tags = ["rdf", "dcat", "odrl"]
+description.en = "Validates and transforms JSON data catalogs into RDF knowledge graphs compliant with European standards."
+description.es = "Valida y transforma catálogos de datos JSON en grafos de conocimiento RDF conformes a los estándares europeos."
+
+[[projects]]
+repo = "No-BNo-Good"
+tags = ["etl", "json-ld"]
+description.en = "High-performance Python ETL that cleans, skolemizes and batch-processes JSON-LD graphs full of blank nodes."
+description.es = "ETL en Python de alto rendimiento que limpia, skolemiza y procesa por lotes grafos JSON-LD con nodos en blanco."
+
+[[projects]]
+repo = "Semanti-View"
+tags = ["ontology", "sparql"]
+description.en = "Applied semantic web: JSON-to-HTML conversion, ontology design in Protégé and advanced SPARQL."
+description.es = "Web semántica aplicada: conversión de JSON a HTML, ontologías en Protégé y SPARQL avanzado."
+
+[[projects]]
+repo = "Neo-Biotic"
+tags = ["data-mining", "oncology"]
+description.en = "Data mining on the impact of antibiotics during neoadjuvant treatment in breast cancer patients."
+description.es = "Minería de datos sobre el impacto de los antibióticos en el tratamiento neoadyuvante del cáncer de mama."
+
+[[projects]]
+repo = "Aniridia-SysBio"
+tags = ["systems-biology", "pax6"]
+description.en = "Systems biology of the genetic networks around Aniridia and the PAX6 gene."
+description.es = "Biología de sistemas de las redes genéticas en torno a la Aniridia y el gen PAX6."
+
+[[projects]]
+repo = "KardiaProject"
+tags = ["cardiology", "prediction"]
+description.en = "Data analysis and predictive modelling focused on cardiovascular health."
+description.es = "Análisis de datos y modelado predictivo centrado en la salud cardiovascular."
+
+[[projects]]
+repo     = "Alcolens"
+language = "TypeScript"   # repo privado: la API no lo devuelve
+tags     = ["saas", "auth", "realtime"]
+# url    = "https://..."  # descomenta si tiene demo pública
+description.en = "Full stack SaaS for patient management and auditing, with secure auth and real-time visualization."
+description.es = "SaaS full stack para gestión y auditoría de pacientes, con autenticación segura y visualización en tiempo real."
+
+[[projects]]
+repo = "isa2024-healthcalc"
+tags = ["oop", "design"]
+description.en = "Applied health calculations and robust system design for a Software Engineering course."
+description.es = "Cálculos de salud aplicados y diseño robusto para la asignatura de Ingeniería del Software."
+
+# -----------------------------------------------------------------------------
+#  Constantes vitales (estadísticas de GitHub)
+# -----------------------------------------------------------------------------
+[vitals]
+languages_top     = 5
+languages_exclude = ["HTML", "CSS", "TeX", "Jupyter Notebook", "Makefile", "Dockerfile"]
+
+# -----------------------------------------------------------------------------
+#  Títulos de sección. motif opcional: "helix" | "pulse" | "none"
+# -----------------------------------------------------------------------------
+[headings]
+about    = { en = "about",     es = "sobre mí" }
+stack    = { en = "stack",     es = "stack" }
+skills   = { en = "genome",    es = "genoma" }
+projects = { en = "work",      es = "proyectos" }
+vitals   = { en = "vitals",    es = "constantes", motif = "pulse" }
+
+[footer]
+text = { en = "built from profile.toml · @{username}", es = "generado desde profile.toml · @{username}" }
