@@ -65,7 +65,9 @@ def _stack(cfg, loc, lang, ctx):
     st = cfg.get("stack", {})
     out = []
     if st.get("icons"):
-        base = (f'https://skillicons.dev/icons?i={",".join(st["icons"])}'
+        # %2C, not ",": srcset treats commas as candidate separators and
+        # would cut the URL after the first icon.
+        base = (f'https://skillicons.dev/icons?i={"%2C".join(st["icons"])}'
                 f'&perline={st.get("per_line", 15)}')
         icons = picture(f"{base}&theme=dark", f"{base}&theme=light", ", ".join(st["icons"]), width="")
         out.append(f'<p align="center"><a href="https://skillicons.dev">{icons}</a></p>')

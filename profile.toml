@@ -20,8 +20,8 @@ languages      = ["en", "es"]
 language_names = { en = "English", es = "Español" }
 
 # Orden de las secciones. Quita una línea para ocultarla.
-# Disponible también: "skills" (genoma de habilidades, ver al final).
-sections = ["banner", "links", "about", "stack", "projects", "vitals", "footer"]
+# Disponibles también: "skills" (genoma de habilidades) y "vitals" (estadísticas).
+sections = ["banner", "links", "about", "stack", "projects", "footer"]
 
 # -----------------------------------------------------------------------------
 #  Estilo. Minimalista: fondo nativo de GitHub, tipografía mono, un tono
@@ -122,9 +122,13 @@ text.es = "**Formación** — Ingeniería de la Salud en la Universidad de Mála
 #  + una línea en texto para lo que no tiene icono allí.
 # -----------------------------------------------------------------------------
 [stack]
-icons    = ["py", "ts", "react", "nextjs", "tailwind", "nodejs",
-            "pytorch", "tensorflow", "docker", "git", "linux"]
-per_line = 11
+# Ordenados por bloques: lenguajes · IA · back end · front end · infraestructura
+icons    = ["py", "ts", "js", "html", "css",
+            "pytorch", "tensorflow", "sklearn",
+            "fastapi", "nodejs", "mongodb", "postgres",
+            "react", "nextjs", "tailwind",
+            "docker", "githubactions", "git", "linux"]
+per_line = 10
 extra_label = { en = "also", es = "también" }
 extra       = ["langgraph", "langchain", "qdrant", "neo4j", "rdf / sparql"]
 

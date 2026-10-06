@@ -2,7 +2,7 @@ name: Build profile
 
 on:
   schedule:
-    - cron: "17 4 * * *"   # daily refresh of stars, streaks and languages
+    - cron: "17 4 * * *"   # daily refresh of project stars
   workflow_dispatch:
   push:
     branches: [master, main]

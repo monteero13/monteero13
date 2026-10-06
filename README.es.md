@@ -23,7 +23,7 @@ Construyo sistemas de IA que hacen trabajo real: agentes, automatizaciones y los
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-stack-light.svg"><img src="assets/generated/es/heading-stack-dark.svg" width="100%" alt="stack"></picture>
 
-<p align="center"><a href="https://skillicons.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,nodejs,pytorch,tensorflow,docker,git,linux&perline=11&theme=dark"><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,nodejs,pytorch,tensorflow,docker,git,linux&perline=11&theme=light"><img src="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,nodejs,pytorch,tensorflow,docker,git,linux&perline=11&theme=dark" alt="py, ts, react, nextjs, tailwind, nodejs, pytorch, tensorflow, docker, git, linux"></picture></a></p>
+<p align="center"><a href="https://skillicons.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cts%2Cjs%2Chtml%2Ccss%2Cpytorch%2Ctensorflow%2Csklearn%2Cfastapi%2Cnodejs%2Cmongodb%2Cpostgres%2Creact%2Cnextjs%2Ctailwind%2Cdocker%2Cgithubactions%2Cgit%2Clinux&perline=10&theme=dark"><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cts%2Cjs%2Chtml%2Ccss%2Cpytorch%2Ctensorflow%2Csklearn%2Cfastapi%2Cnodejs%2Cmongodb%2Cpostgres%2Creact%2Cnextjs%2Ctailwind%2Cdocker%2Cgithubactions%2Cgit%2Clinux&perline=10&theme=light"><img src="https://skillicons.dev/icons?i=py%2Cts%2Cjs%2Chtml%2Ccss%2Cpytorch%2Ctensorflow%2Csklearn%2Cfastapi%2Cnodejs%2Cmongodb%2Cpostgres%2Creact%2Cnextjs%2Ctailwind%2Cdocker%2Cgithubactions%2Cgit%2Clinux&perline=10&theme=dark" alt="py, ts, js, html, css, pytorch, tensorflow, sklearn, fastapi, nodejs, mongodb, postgres, react, nextjs, tailwind, docker, githubactions, git, linux"></picture></a></p>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/stack-light.svg"><img src="assets/generated/es/stack-dark.svg" width="100%" alt="langgraph, langchain, qdrant, neo4j, rdf / sparql"></picture>
 
@@ -37,12 +37,6 @@ Construyo sistemas de IA que hacen trabajo real: agentes, automatizaciones y los
 <a href="https://github.com/monteero13/No-BNo-Good"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-No-BNo-Good-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-No-BNo-Good-light.svg"><img src="assets/generated/es/project-No-BNo-Good-dark.svg" width="49%" alt="No-BNo-Good"></picture></a>
 <a href="https://github.com/monteero13/Neo-Biotic"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-Neo-Biotic-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-Neo-Biotic-light.svg"><img src="assets/generated/es/project-Neo-Biotic-dark.svg" width="49%" alt="Neo-Biotic"></picture></a>
 </p>
-
-<br>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-vitals-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-vitals-light.svg"><img src="assets/generated/es/heading-vitals-dark.svg" width="100%" alt="actividad"></picture>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/vitals-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/vitals-light.svg"><img src="assets/generated/es/vitals-dark.svg" width="100%" alt="actividad"></picture>
 
 <br>
 
