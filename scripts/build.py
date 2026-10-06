@@ -21,7 +21,7 @@ import shutil
 import sys
 from pathlib import Path
 
-from profilekit import genome, heading, preview, projects, readme, stack, vitals
+from profilekit import genome, header, heading, preview, projects, readme, stack, vitals
 from profilekit.config import THEMES, Config
 from profilekit.github import GitHubData, fetch
 
@@ -59,7 +59,9 @@ def main(argv=None) -> None:
             files = {}
             for i, section in enumerate(readme.headed_sections(cfg), start=1):
                 files[f"heading-{section}"] = heading.render(cfg, loc, theme, section, i)
-            if "stack" in sections:
+            if "banner" in sections and not cfg.get("banner", {}).get("dark"):
+                files["header"] = header.render(cfg, loc, theme)
+            if "stack" in sections and cfg.get("stack", {}).get("extra"):
                 files["stack"] = stack.render(cfg, loc, theme)
             if "skills" in sections:
                 files["genome"] = genome.render(cfg, loc, theme)

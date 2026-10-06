@@ -1,10 +1,11 @@
 """Section headings: `01 · about ─────────────── ≈≈≈` in mono.
-A hairline runs to the right edge and ends in a small motif."""
+A hairline runs to the right edge and ends in a small motif
+(flow, helix, pulse or none)."""
 
 from __future__ import annotations
 
 from .config import Loc
-from .svg import document, esc, helix, n, pulse, text_width
+from .svg import document, esc, flow, helix, n, pulse, text_width
 
 W, H = 840, 30
 
@@ -15,8 +16,8 @@ def render(cfg, loc: Loc, theme: str, section: str, index: int) -> str:
     style = cfg.get("style", {})
     spec = cfg["headings"][section]
     title = loc(spec)
-    motif = spec.get("motif", style.get("heading_motif", "helix")) if isinstance(spec, dict) \
-        else style.get("heading_motif", "helix")
+    motif = spec.get("motif", style.get("heading_motif", "flow")) if isinstance(spec, dict) \
+        else style.get("heading_motif", "flow")
 
     y = 19
     parts = []
@@ -36,6 +37,8 @@ def render(cfg, loc: Loc, theme: str, section: str, index: int) -> str:
                  f'stroke="{c["line"]}"/>')
     if motif == "helix":
         parts.append(helix(section, W - motif_w, y - 12, motif_w, 15, c, period=30))
+    elif motif == "flow":
+        parts.append(flow(W - motif_w, y - 14, motif_w, 14, c))
     elif motif == "pulse":
         parts.append(pulse(W - motif_w, y - 15, motif_w, 16, c))
 

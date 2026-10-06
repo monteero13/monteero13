@@ -132,6 +132,35 @@ def pulse(x: float, y: float, w: float, h: float, c: dict, beats: int = 1) -> st
     )
 
 
+def flow(x: float, y: float, w: float, h: float, c: dict, labels: list[str] | None = None,
+         mono: str = "monospace") -> str:
+    """A tiny agent graph (input → agent ⇄ tools → output, LangGraph style).
+    A coral packet walks it, looping once through the tools before leaving."""
+    k = 4
+    cy = y + h * 0.62
+    xs = [x + 4 + i * (w - 8) / (k - 1) for i in range(k)]
+    lift = h * 0.55
+    loop = f"Q{n((xs[1] + xs[2]) / 2)} {n(cy - lift)} {n(xs[1])} {n(cy)}"
+    edges = (f'<path d="M{n(xs[0])} {n(cy)}H{n(xs[3])}" stroke="{c["faint"]}" stroke-width="1"/>'
+             f'<path d="M{n(xs[2])} {n(cy)}{loop}" fill="none" stroke="{c["faint"]}" '
+             f'stroke-width="1" stroke-dasharray="2 2"/>')
+    nodes = "".join(
+        f'<circle cx="{n(px)}" cy="{n(cy)}" r="3" fill="{c["strong"] if i in (1, 2) else c["muted"]}"/>'
+        for i, px in enumerate(xs)
+    )
+    route = (f"M{n(xs[0])} {n(cy)}H{n(xs[2])}{loop}H{n(xs[3])}")
+    packet = (f'<circle r="2.2" fill="{c["accent"]}"><animateMotion dur="3.4s" '
+              f'repeatCount="indefinite" path="{route}"/></circle>')
+    text = ""
+    if labels:
+        text = "".join(
+            f'<text x="{n(px)}" y="{n(cy + 15)}" text-anchor="middle" font-family="{esc(mono)}" '
+            f'font-size="9.5" fill="{c["muted"]}">{esc(lb)}</text>'
+            for px, lb in zip(xs, labels)
+        )
+    return edges + nodes + packet + text
+
+
 def live_dot(x: float, y: float, c: dict, r: float = 3) -> str:
     return (f'<circle cx="{n(x)}" cy="{n(y)}" r="{r}" fill="{c["accent"]}">'
             f'<animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>')

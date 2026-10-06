@@ -3,11 +3,7 @@
   Edit profile.toml instead: manual changes here are overwritten.
 -->
 
-<div align="center">
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner/banner-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/banner/banner-dark.gif"><img src="assets/banner/banner-dark.gif" width="100%" alt="Alberto Montero — Health Engineering · Universidad de Málaga"></picture>
-
-</div>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/header-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/header-light.svg"><img src="assets/generated/es/header-dark.svg" width="100%" alt="Alberto Montero"></picture>
 
 <br>
 
@@ -17,46 +13,36 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-about-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-about-light.svg"><img src="assets/generated/es/heading-about-dark.svg" width="100%" alt="sobre mí"></picture>
 
-Estudiante de Ingeniería de la Salud y desarrollador full stack desde Málaga.
-Convierto datos en bruto en conocimiento útil para la salud de las personas.
+Construyo sistemas de IA que hacen trabajo real: agentes, automatizaciones y los productos full stack que los rodean.
 
-- **Ahora** — Ingeniería de la Salud en la Universidad de Málaga; después, Máster en Ingeniería del Software e IA.
-- **Bio** — minería de datos, biología de sistemas y modelos predictivos en cáncer, genética y cardiología.
-- **Grafos** — pipelines ETL hacia grafos de conocimiento RDF · DCAT, IDS, ODRL · SPARQL.
-- **Web** — interfaces SaaS con autenticación segura y visualización en tiempo real.
+- **Ahora** — becario de IA y automatización en **DEKRA**, diseñando flujos agénticos con LangGraph y LangChain.
+- **Construyo** — front ends con React / Next.js, back ends en Python y Node, y pipelines de datos que alimentan los modelos.
+- **Formación** — Ingeniería de la Salud en la Universidad de Málaga, de camino al Máster en Ingeniería del Software e IA.
 
 <br>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-stack-light.svg"><img src="assets/generated/es/heading-stack-dark.svg" width="100%" alt="stack"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/stack-light.svg"><img src="assets/generated/es/stack-dark.svg" width="100%" alt="stack"></picture>
+<p align="center"><a href="https://skillicons.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,nodejs,pytorch,tensorflow,docker,git,linux&perline=11&theme=dark"><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,nodejs,pytorch,tensorflow,docker,git,linux&perline=11&theme=light"><img src="https://skillicons.dev/icons?i=py,ts,react,nextjs,tailwind,nodejs,pytorch,tensorflow,docker,git,linux&perline=11&theme=dark" alt="py, ts, react, nextjs, tailwind, nodejs, pytorch, tensorflow, docker, git, linux"></picture></a></p>
 
-<br>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-skills-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-skills-light.svg"><img src="assets/generated/es/heading-skills-dark.svg" width="100%" alt="genoma"></picture>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/genome-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/genome-light.svg"><img src="assets/generated/es/genome-dark.svg" width="100%" alt="genoma"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/stack-light.svg"><img src="assets/generated/es/stack-dark.svg" width="100%" alt="langgraph, langchain, qdrant, neo4j, rdf / sparql"></picture>
 
 <br>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-projects-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-projects-light.svg"><img src="assets/generated/es/heading-projects-dark.svg" width="100%" alt="proyectos"></picture>
 
 <p align="center">
+<a href="https://github.com/monteero13/Alcolens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-Alcolens-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-Alcolens-light.svg"><img src="assets/generated/es/project-Alcolens-dark.svg" width="49%" alt="Alcolens"></picture></a>
 <a href="https://github.com/monteero13/edowl"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-edowl-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-edowl-light.svg"><img src="assets/generated/es/project-edowl-dark.svg" width="49%" alt="edowl"></picture></a>
 <a href="https://github.com/monteero13/No-BNo-Good"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-No-BNo-Good-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-No-BNo-Good-light.svg"><img src="assets/generated/es/project-No-BNo-Good-dark.svg" width="49%" alt="No-BNo-Good"></picture></a>
-<a href="https://github.com/monteero13/Semanti-View"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-Semanti-View-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-Semanti-View-light.svg"><img src="assets/generated/es/project-Semanti-View-dark.svg" width="49%" alt="Semanti-View"></picture></a>
 <a href="https://github.com/monteero13/Neo-Biotic"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-Neo-Biotic-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-Neo-Biotic-light.svg"><img src="assets/generated/es/project-Neo-Biotic-dark.svg" width="49%" alt="Neo-Biotic"></picture></a>
-<a href="https://github.com/monteero13/Aniridia-SysBio"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-Aniridia-SysBio-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-Aniridia-SysBio-light.svg"><img src="assets/generated/es/project-Aniridia-SysBio-dark.svg" width="49%" alt="Aniridia-SysBio"></picture></a>
-<a href="https://github.com/monteero13/KardiaProject"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-KardiaProject-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-KardiaProject-light.svg"><img src="assets/generated/es/project-KardiaProject-dark.svg" width="49%" alt="KardiaProject"></picture></a>
-<a href="https://github.com/monteero13/Alcolens"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-Alcolens-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-Alcolens-light.svg"><img src="assets/generated/es/project-Alcolens-dark.svg" width="49%" alt="Alcolens"></picture></a>
-<a href="https://github.com/monteero13/isa2024-healthcalc"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/project-isa2024-healthcalc-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/project-isa2024-healthcalc-light.svg"><img src="assets/generated/es/project-isa2024-healthcalc-dark.svg" width="49%" alt="isa2024-healthcalc"></picture></a>
 </p>
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-vitals-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-vitals-light.svg"><img src="assets/generated/es/heading-vitals-dark.svg" width="100%" alt="constantes"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/heading-vitals-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/heading-vitals-light.svg"><img src="assets/generated/es/heading-vitals-dark.svg" width="100%" alt="actividad"></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/vitals-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/vitals-light.svg"><img src="assets/generated/es/vitals-dark.svg" width="100%" alt="constantes"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/es/vitals-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/es/vitals-light.svg"><img src="assets/generated/es/vitals-dark.svg" width="100%" alt="actividad"></picture>
 
 <br>
 

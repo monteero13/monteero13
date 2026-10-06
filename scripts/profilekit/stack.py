@@ -1,34 +1,37 @@
-"""Stack as a small mono manifest: muted keys, values separated by thin dots."""
+"""One mono line under the skill-icons row for tools that have no icon there
+(LangGraph, Qdrant...): `also  langgraph · langchain · qdrant`."""
 
 from __future__ import annotations
 
 from .config import Loc
 from .svg import document, esc, n, text_width
 
-W = 840
-ROW = 26
-SIZE = 13
+W, H = 840, 24
+SIZE = 12.5
+GAP = 18
 
 
 def render(cfg, loc: Loc, theme: str) -> str:
     c = cfg.palette(theme)
     mono = cfg.theme["mono"]
-    rows = cfg.get("stack", [])
-    key_w = max((text_width(loc(r["key"]), SIZE, mono=True) for r in rows), default=0) + 28
-    H = len(rows) * ROW + 6
+    s = cfg.get("stack", {})
+    key = loc(s.get("extra_label", ""))
+    items = [loc(i) for i in s.get("extra", [])]
+
+    widths = [text_width(i, SIZE, mono=True) for i in items]
+    key_w = text_width(key, SIZE, mono=True) + 14 if key else 0
+    total = key_w + sum(widths) + GAP * (len(items) - 1)
+    x = (W - total) / 2  # centred under the icon row
 
     parts = []
-    for i, row in enumerate(rows):
-        y = 18 + i * ROW
-        parts.append(f'<text x="0" y="{y}" font-family="{esc(mono)}" font-size="{SIZE}" '
-                     f'fill="{c["muted"]}">{esc(loc(row["key"]))}</text>')
-        x = key_w
-        for k, item in enumerate(row["items"]):
-            if k:
-                parts.append(f'<circle cx="{n(x - 9)}" cy="{y - 4.5}" r="1.4" fill="{c["faint"]}"/>')
-            label = loc(item)
-            parts.append(f'<text x="{n(x)}" y="{y}" font-family="{esc(mono)}" font-size="{SIZE}" '
-                         f'fill="{c["strong"]}">{esc(label)}</text>')
-            x += text_width(label, SIZE, mono=True) + 18
-    return document(W, H, ", ".join(", ".join(map(loc, r["items"])) for r in rows),
-                    cfg.theme["font"], "".join(parts))
+    if key:
+        parts.append(f'<text x="{n(x)}" y="16" font-family="{esc(mono)}" font-size="{SIZE}" '
+                     f'fill="{c["muted"]}">{esc(key)}</text>')
+        x += key_w
+    for k, (item, w) in enumerate(zip(items, widths)):
+        if k:
+            parts.append(f'<circle cx="{n(x - GAP / 2)}" cy="11.5" r="1.4" fill="{c["faint"]}"/>')
+        parts.append(f'<text x="{n(x)}" y="16" font-family="{esc(mono)}" font-size="{SIZE}" '
+                     f'fill="{c["strong"]}">{esc(item)}</text>')
+        x += w + GAP
+    return document(W, H, ", ".join(items), cfg.theme["font"], "".join(parts))

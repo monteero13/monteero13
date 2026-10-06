@@ -16,11 +16,12 @@ def asset(lang: str, name: str, theme: str) -> str:
 
 
 def picture(dark: str, light: str, alt: str, width: str = "100%") -> str:
+    size = f' width="{width}"' if width else ""
     return (
         "<picture>"
         f'<source media="(prefers-color-scheme: dark)" srcset="{dark}">'
         f'<source media="(prefers-color-scheme: light)" srcset="{light}">'
-        f'<img src="{dark}" width="{width}" alt="{alt}">'
+        f'<img src="{dark}"{size} alt="{alt}">'
         "</picture>"
     )
 
@@ -30,11 +31,12 @@ def generated(lang: str, name: str, alt: str, width: str = "100%") -> str:
 
 
 def _banner(cfg, loc, lang, ctx):
+    """A ready-made image when [banner] names one, otherwise the generated header."""
     b = cfg.get("banner", {})
-    if not b.get("dark"):
-        return ""
-    alt = loc(b.get("alt", cfg.profile["name"]))
-    return f'<div align="center">\n\n{picture(b["dark"], b.get("light", b["dark"]), alt)}\n\n</div>'
+    if b.get("dark"):
+        alt = loc(b.get("alt", cfg.profile["name"]))
+        return f'<div align="center">\n\n{picture(b["dark"], b.get("light", b["dark"]), alt)}\n\n</div>'
+    return generated(lang, "header", cfg.profile["name"])
 
 
 def _links(cfg, loc, lang, ctx):
@@ -60,7 +62,16 @@ def _about(cfg, loc, lang, ctx):
 
 
 def _stack(cfg, loc, lang, ctx):
-    return generated(lang, "stack", "stack")
+    st = cfg.get("stack", {})
+    out = []
+    if st.get("icons"):
+        base = (f'https://skillicons.dev/icons?i={",".join(st["icons"])}'
+                f'&perline={st.get("per_line", 15)}')
+        icons = picture(f"{base}&theme=dark", f"{base}&theme=light", ", ".join(st["icons"]), width="")
+        out.append(f'<p align="center"><a href="https://skillicons.dev">{icons}</a></p>')
+    if st.get("extra"):
+        out.append(generated(lang, "stack", ", ".join(map(loc, st["extra"]))))
+    return "\n\n".join(out)
 
 
 def _skills(cfg, loc, lang, ctx):

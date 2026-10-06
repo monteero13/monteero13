@@ -70,10 +70,17 @@ def render(cfg) -> str:
         if section == "banner" and banner.get("dark"):
             light = banner.get("light", banner["dark"])
             blocks.append(f'<img data-static-dark="{banner["dark"]}" data-static-light="{light}" alt="banner">')
+        elif section == "banner":
+            blocks.append('<img data-name="header" alt="header">')
         elif section == "about":
             blocks.append('<p class="note">about: markdown text, see README</p>')
         elif section == "stack":
-            blocks.append('<img data-name="stack" alt="stack">')
+            icons = cfg.get("stack", {}).get("icons", [])
+            if icons:
+                base = f'https://skillicons.dev/icons?i={",".join(icons)}&perline={cfg["stack"].get("per_line", 15)}'
+                blocks.append(f'<img data-static-dark="{base}&theme=dark" data-static-light="{base}&theme=light" alt="icons">')
+            if cfg.get("stack", {}).get("extra"):
+                blocks.append('<img data-name="stack" alt="stack">')
         elif section == "skills":
             blocks.append('<img data-name="genome" alt="genome">')
         elif section == "projects":
