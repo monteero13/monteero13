@@ -1,85 +1,147 @@
-<div align="right"> 
-  <a href="README.es.md">
-    <img src="https://img.shields.io/badge/Lang-Español-005DAA?style=flat-square" alt="ES" />
-  </a> 
-</div> 
+<div align="center">
 
-<div align="center"> 
-  <h1>👋 Hi, I'm Alberto Montero</h1> 
-  <h3>Health Engineering Student | Bioinformatics & Full Stack Developer</h3> 
-  
-  <p> 
-    Building the bridge between complex data, semantic web, and human health. <br> 
-    Based at the <b>University of Málaga</b>
-  </p> 
+<!-- BANNER - terminal profile.sh --live. Generado por scripts/generate.py.
+     Cache-bust con ?v=N tras regenerar. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/banner-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg?v=1">
+  <img src="assets/banner-dark.svg?v=1" width="100%" alt="profile.sh --live">
+</picture>
 
-  <a href="https://albertomontero.is-a.dev"> 
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a> 
-</div> 
+<br>
 
-<br> 
+<!-- NOMBRE / TAGLINE - typing animado -->
+<a href="https://github.com/monteero13">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2800&pause=900&color=5EC8E5&center=true&vCenter=true&width=880&lines=Alberto+Montero+-+Health+Engineering+%26+Bioinformatics;Semantic+Web+%2F+Knowledge+Graphs+%2F+AI;Turning+raw+data+into+actionable+knowledge" alt="typing banner">
+</a>
 
-## 🚀 About Me 
+<br>
 
-I am an engineering student deeply passionate about transforming raw data into actionable knowledge. My focus lies at the intersection of **Software Engineering**, **Artificial Intelligence**, and **Bioinformatics**, and I am currently expanding this expertise as I transition into the Master's program in Software Engineering and Artificial Intelligence.
+<!-- SOCIALS -->
+<a href="https://es.linkedin.com/in/albeertomonterosolera"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
+<a href="https://albertomontero.is-a.dev"><img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=vercel&logoColor=5EC8E5" alt="Portfolio"></a>&nbsp;&nbsp;
+<a href="README.es.md"><img src="https://img.shields.io/badge/Lang-Espa%C3%B1ol-0d1117?style=for-the-badge&logoColor=5EC8E5" alt="ES"></a>
 
-Whether I'm designing complex ETL pipelines for Knowledge Graphs, developing interactive Full Stack SaaS interfaces, or researching genetic networks, I prioritize clean architecture, scalability, and best practices. 
+<br>
 
---- 
+<!-- CONTADOR DE VISITAS -->
+<img src="https://komarev.com/ghpvc/?username=monteero13&style=for-the-badge&color=5EC8E5&label=VISITAS&labelColor=0d1117" alt="contador de visitas">
 
-## 🛠️ Tech Stack & Tools 
+</div>
 
-<div align="center"> 
-  <!-- Languages & Frontend -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /> 
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /> 
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /> 
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /> 
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /> 
-  <br> 
-  
-  <!-- Backend & Data -->
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node" /> 
-  <img src="https://img.shields.io/badge/Neo4j-018BFF?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j" />
-  <img src="https://img.shields.io/badge/Qdrant-FD2E6C?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant" />
-  <img src="https://img.shields.io/badge/Semantic_Web-RDF_/_SPARQL-005DAA?style=for-the-badge" alt="Semantic Web" /> 
-  <img src="https://img.shields.io/badge/Data_Engineering-ETL-FF6F00?style=for-the-badge" alt="Data Engineering" /> 
-  <br>
-  
-  <!-- DevOps & Tools -->
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /> 
-</div> 
+---
 
-<br> 
+## This is me :)
 
-## 📂 Featured Projects 
+Hi, I'm **Alberto**, health engineering student and full stack developer, broadcasting from Málaga 🇪🇸.
+I build the bridge between complex data, the semantic web and human health.
 
-### 🧠 Semantic Web & Data Engineering 
+- 🎓 **Health Engineering student at the University of Málaga**, now moving into the Master's in Software Engineering and Artificial Intelligence.
+- 🧬 **Bioinformatics & data science**: data mining, systems biology and predictive models around cancer, genetics and cardiovascular health.
+- 🕸️ **Semantic web & data engineering**: ETL pipelines for **RDF Knowledge Graphs**, DCAT / IDS / ODRL, SPARQL.
+- 💻 **Full Stack**: SaaS interfaces with secure auth and real-time data visualization.
+- 🧱 **My way of working:** clean architecture, scalability and best practices, whether it's a pipeline, a graph or a dashboard.
 
-- **[edowl](https://github.com/monteero13/edowl)**: Automation tool validating and transforming JSON data catalogs into **RDF Knowledge Graphs**. Fully compliant with strict European standards (DCAT, IDS, ODRL). 
-- **[No-BNo-Good](https://github.com/monteero13/No-BNo-Good)**: High-performance Python ETL pipeline designed to clean, skolemize, and batch-process complex RDF graphs (JSON-LD), efficiently handling Blank Nodes. 
-- **[Semanti-View](https://github.com/monteero13/Semanti-View)**: Applied semantic web engineering: dynamic JSON-to-HTML conversion, custom ontology design using Protégé, and advanced SPARQL querying. 
+<br>
 
-### 🧬 Bioinformatics & Data Science 
+<div align="center">
 
-- **[Neo-Biotic](https://github.com/monteero13/Neo-Biotic)**: Advanced Data Mining analysis exploring the impact of antibiotics on neoadjuvant treatments for breast cancer patients. 
-- **[Aniridia-SysBio](https://github.com/monteero13/Aniridia-SysBio)**: Systems Biology research investigating the biological and genetic networks surrounding Aniridia and the PAX6 gene. 
-- **[KardiaProject](https://github.com/monteero13/KardiaProject)**: Comprehensive data analysis and predictive modeling centered on cardiovascular health and pathologies. 
+## my perfect stack
 
-### 💻 Software Development 
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,r,ts,pytorch,tensorflow,react,nextjs,nodejs,neo4j,docker,linux,git&perline=6" />
+  </a>
+</p>
 
-- **[Alcolens](https://github.com/monteero13/Alcolens)**: Full Stack SaaS platform designed for patient management and auditing, featuring secure authentication and real-time data visualization.
-- **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc)**: Software Engineering project focusing on applied health calculations and robust system design. 
+<img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain">&nbsp;
+<img src="https://img.shields.io/badge/Qdrant-FD2E6C?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant">&nbsp;
+<img src="https://img.shields.io/badge/RDF_/_SPARQL-0d1117?style=for-the-badge&logoColor=5EC8E5" alt="RDF SPARQL">
 
-<br> 
+</div>
 
-## 🔗 Let's Connect 
+---
 
-<div align="center"> 
-  <a href="https://es.linkedin.com/in/albeertomonterosolera"> 
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /> 
-  </a> 
+<div align="center">
+
+## signals
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+
+<!-- Radar autoevaluado - edita assets/skills.json, el workflow lo redibuja -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
+  <img src="assets/radar-dark.svg" width="400" alt="skill radar chart">
+</picture>
+
+</td>
+<td width="50%" align="center" valign="middle">
+
+<!-- Radar de lenguajes - edita assets/langmix.json -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/radar-langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
+  <img src="assets/radar-langs-dark.svg" width="400" alt="language radar chart">
+</picture>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+## what I've shipped
+
+### 🧠 Semantic Web & Data Engineering
+
+- **[edowl](https://github.com/monteero13/edowl)**: validates and transforms JSON data catalogs into **RDF Knowledge Graphs**, compliant with European standards (DCAT, IDS, ODRL).
+- **[No-BNo-Good](https://github.com/monteero13/No-BNo-Good)**: high-performance Python ETL pipeline to clean, skolemize and batch-process JSON-LD graphs with Blank Nodes.
+- **[Semanti-View](https://github.com/monteero13/Semanti-View)**: JSON-to-HTML conversion, custom ontology design in Protégé and advanced SPARQL.
+
+### 🧬 Bioinformatics & Data Science
+
+- **[Neo-Biotic](https://github.com/monteero13/Neo-Biotic)**: data mining on the impact of antibiotics in neoadjuvant treatment for breast cancer.
+- **[Aniridia-SysBio](https://github.com/monteero13/Aniridia-SysBio)**: systems biology of the genetic networks around Aniridia and the PAX6 gene.
+- **[KardiaProject](https://github.com/monteero13/KardiaProject)**: analysis and predictive modeling of cardiovascular health.
+
+### 💻 Software Development
+
+- **[Alcolens](https://github.com/monteero13/Alcolens)**: Full Stack SaaS for patient management and auditing, with secure auth and real-time visualization.
+- **[isa2024-healthcalc](https://github.com/monteero13/isa2024-healthcalc)**: applied health calculations and robust system design.
+
+---
+
+<div align="center">
+
+## Numbers matter? ohhh yes.
+
+<!-- Generado por scripts/cards.py con la API oficial de GitHub. Deliberadamente NO
+     github-readme-stats / streak-stats: son instancias públicas compartidas que se caen. -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
+  <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics">
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-langs-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-langs-light.svg">
+  <img src="assets/card-langs-dark.svg" width="480" alt="most used languages">
+</picture>
+
+</div>
+
+---
+
+<div align="center">
+
+<sub>` Built with love · @monteero13 `</sub>
+
 </div>
