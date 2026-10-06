@@ -39,6 +39,7 @@ font = "ui-sans-serif,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
 mono = "ui-monospace,SFMono-Regular,'JetBrains Mono','Cascadia Code',Consolas,monospace"
 
 [theme.dark]
+bg     = "#0D1117"   # fondo de GitHub (anillo del punto "live" del avatar)
 strong = "#FFF8E8"   # crema: nombre, títulos, cifras
 text   = "#C9D1D9"
 muted  = "#7D8590"
@@ -47,6 +48,7 @@ faint  = "#30363D"
 accent = "#F2777A"   # coral: sólo cursor, punto "live" y paquetes en movimiento
 
 [theme.light]
+bg     = "#FFFFFF"
 strong = "#1F2328"
 text   = "#424A53"
 muted  = "#6E7781"
@@ -59,6 +61,8 @@ accent = "#CF4A4A"
 #  Para usar una imagen propia en su lugar, rellena [banner] más abajo.
 # -----------------------------------------------------------------------------
 [header]
+# Retrato redondo a la izquierda (PNG/JPG cuadrado). Bórralo para quitarlo.
+avatar = "assets/avatar.png"
 status = { en = "AI intern @ DEKRA", es = "becario de IA en DEKRA" }
 role   = { en = "AI & automation engineer · full stack developer", es = "Ingeniero de IA y automatización · desarrollador full stack" }
 # Frases que se escriben una tras otra en el prompt

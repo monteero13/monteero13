@@ -1,7 +1,10 @@
-"""Profile header: name, role, a status line and a prompt that types a few
-phrases in turn. A tiny agent graph sits on the right as the one moving detail."""
+"""Profile header: optional round portrait, name, role, a status line and a
+prompt that types a few phrases in turn. A tiny agent graph sits on the right as the one moving detail."""
 
 from __future__ import annotations
+
+import base64
+from pathlib import Path
 
 from .config import Loc
 from .svg import document, esc, flow, live_dot, n
@@ -9,6 +12,8 @@ from .svg import document, esc, flow, live_dot, n
 W, H = 840, 168
 PHRASE_S = 4.2      # seconds each phrase stays on screen (typing included)
 TYPE_S = 0.045      # seconds per typed character
+AVATAR_D = 132     # portrait diameter
+AVATAR_Y = 16
 
 
 def _typing(phrases: list[str], x: float, y: float, size: float, c: dict, mono: str) -> str:
@@ -58,6 +63,27 @@ def _typing(phrases: list[str], x: float, y: float, size: float, c: dict, mono: 
     return "".join(out)
 
 
+def _avatar(path: Path, c: dict) -> str:
+    """The portrait, embedded as a data URI (an SVG shown through <img> cannot
+    load external files), clipped to a circle with a hairline ring and an
+    online-style live dot."""
+    if not path.exists():
+        raise SystemExit(f"profile.toml: [header].avatar not found: {path}")
+    mime = "image/png" if path.suffix.lower() == ".png" else "image/jpeg"
+    data = base64.b64encode(path.read_bytes()).decode()
+    r = AVATAR_D / 2
+    cx, cy = r, AVATAR_Y + r
+    dot_x, dot_y = cx + r * 0.71, cy + r * 0.71
+    return (
+        f'<clipPath id="av"><circle cx="{n(cx)}" cy="{n(cy)}" r="{n(r - 1)}"/></clipPath>'
+        f'<image href="data:{mime};base64,{data}" x="0" y="{AVATAR_Y}" width="{AVATAR_D}" '
+        f'height="{AVATAR_D}" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice"/>'
+        f'<circle cx="{n(cx)}" cy="{n(cy)}" r="{n(r - 0.5)}" fill="none" stroke="{c["line"]}"/>'
+        f'<circle cx="{n(dot_x)}" cy="{n(dot_y)}" r="7" fill="{c["bg"]}"/>'
+        + live_dot(dot_x, dot_y, c, r=4.5)
+    )
+
+
 def render(cfg, loc: Loc, theme: str) -> str:
     c = cfg.palette(theme)
     font, mono = cfg.theme["font"], cfg.theme["mono"]
@@ -65,28 +91,35 @@ def render(cfg, loc: Loc, theme: str) -> str:
     p = cfg.profile
 
     body = []
-    body.append(f'<text x="0" y="16" font-family="{esc(mono)}" font-size="12" fill="{c["muted"]}">'
+    x = 0
+    avatar = h.get("avatar")
+    if avatar:
+        body.append(_avatar(cfg.path.parent / avatar, c))
+        x = AVATAR_D + 26
+
+    body.append(f'<text x="{x}" y="16" font-family="{esc(mono)}" font-size="12" fill="{c["muted"]}">'
                 f'~/{esc(cfg.username)}</text>')
     status = loc(h.get("status", ""))
     if status:
         body.append(f'<text x="{W}" y="16" text-anchor="end" font-family="{esc(mono)}" font-size="12" '
                     f'fill="{c["text"]}">{esc(status)}</text>')
-        body.append(live_dot(W - len(status) * 12 * 0.61 - 12, 12, c))
+        if not avatar:  # with an avatar the live dot sits on the portrait instead
+            body.append(live_dot(W - len(status) * 12 * 0.61 - 12, 12, c))
 
-    body.append(f'<text x="0" y="72" font-size="40" font-weight="700" fill="{c["strong"]}" '
+    body.append(f'<text x="{x}" y="66" font-size="38" font-weight="700" fill="{c["strong"]}" '
                 f'letter-spacing="-1">{esc(p["name"])}</text>')
-    body.append(f'<text x="0" y="102" font-size="16" fill="{c["text"]}">{esc(loc(h.get("role", "")))}</text>')
+    body.append(f'<text x="{x}" y="96" font-size="15" fill="{c["text"]}">{esc(loc(h.get("role", "")))}</text>')
 
     phrases = [loc(t) for t in h.get("typing", [])]
     if phrases:
-        body.append(f'<text x="0" y="140" font-family="{esc(mono)}" font-size="14" '
+        body.append(f'<text x="{x}" y="136" font-family="{esc(mono)}" font-size="14" '
                     f'fill="{c["accent"]}">&gt;</text>')
-        body.append(_typing(phrases, 18, 140, 14, c, mono))
+        body.append(_typing(phrases, x + 18, 136, 14, c, mono))
 
     labels = h.get("flow_labels")
     if labels is not None or h.get("flow", True):
-        # inset so the outer labels never touch the edge
-        body.append(flow(W - 236, 62, 214, 40, c, [loc(lb) for lb in (labels or [])], mono))
+        # beside the prompt line, inset so the outer labels never touch the edge
+        body.append(flow(W - 236, 106, 214, 40, c, [loc(lb) for lb in (labels or [])], mono))
 
     body.append(f'<line x1="0" x2="{W}" y1="{H - 0.5}" y2="{H - 0.5}" stroke="{c["line"]}"/>')
     return document(W, H, f'{p["name"]} — {loc(h.get("role", ""))}', font, "".join(body))
