@@ -3,7 +3,6 @@ prompt that types a few phrases in turn. A tiny agent graph sits on the right as
 
 from __future__ import annotations
 
-import base64
 from pathlib import Path
 
 from .config import Loc
@@ -14,6 +13,7 @@ PHRASE_S = 4.2      # seconds each phrase stays on screen (typing included)
 TYPE_S = 0.045      # seconds per typed character
 AVATAR_D = 132     # portrait diameter
 AVATAR_Y = 16
+AVATAR_COLOURS = 96  # palette size when vectorizing the portrait
 
 
 def _typing(phrases: list[str], x: float, y: float, size: float, c: dict, mono: str) -> str:
@@ -63,21 +63,49 @@ def _typing(phrases: list[str], x: float, y: float, size: float, c: dict, mono: 
     return "".join(out)
 
 
+def _vectorize(path: Path, size: int, colours: int) -> str:
+    """Raster portrait -> one <path> per palette colour, made of horizontal
+    pixel runs. GitHub serves repo SVGs with `default-src 'none'`, which blocks
+    embedded <image> data URIs, so the portrait has to be plain vector shapes."""
+    try:
+        from PIL import Image
+    except ImportError:
+        raise SystemExit("[header].avatar needs Pillow:  python -m pip install pillow")
+    img = Image.open(path).convert("RGB").resize((size, size), Image.Resampling.LANCZOS)
+    q = img.quantize(colors=colours, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE)
+    pal, px = q.getpalette(), q.load()
+    r2 = (size / 2) ** 2
+    runs: dict[int, list[str]] = {}
+    for y in range(size):
+        x = 0
+        while x < size:
+            idx, x0 = px[x, y], x
+            while x < size and px[x, y] == idx:
+                x += 1
+            # keep only the part of the run inside the circle
+            dy = y + 0.5 - size / 2
+            half = (r2 - dy * dy) ** 0.5 if r2 > dy * dy else 0
+            a, b = max(x0, size / 2 - half), min(x, size / 2 + half)
+            if b - a >= 0.5:
+                a, b = round(a), round(b)
+                if b > a:
+                    runs.setdefault(idx, []).append(f"M{a} {y}h{b - a}v1h{a - b}z")
+    return "".join(
+        f'<path fill="#{pal[3 * i]:02x}{pal[3 * i + 1]:02x}{pal[3 * i + 2]:02x}" d="{"".join(d)}"/>'
+        for i, d in runs.items()
+    )
+
+
 def _avatar(path: Path, c: dict) -> str:
-    """The portrait, embedded as a data URI (an SVG shown through <img> cannot
-    load external files), clipped to a circle with a hairline ring and an
-    online-style live dot."""
+    """Round portrait on the left with a hairline ring and an online-style live dot."""
     if not path.exists():
         raise SystemExit(f"profile.toml: [header].avatar not found: {path}")
-    mime = "image/png" if path.suffix.lower() == ".png" else "image/jpeg"
-    data = base64.b64encode(path.read_bytes()).decode()
     r = AVATAR_D / 2
     cx, cy = r, AVATAR_Y + r
     dot_x, dot_y = cx + r * 0.71, cy + r * 0.71
     return (
-        f'<clipPath id="av"><circle cx="{n(cx)}" cy="{n(cy)}" r="{n(r - 1)}"/></clipPath>'
-        f'<image href="data:{mime};base64,{data}" x="0" y="{AVATAR_Y}" width="{AVATAR_D}" '
-        f'height="{AVATAR_D}" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice"/>'
+        f'<g transform="translate(0,{AVATAR_Y})" shape-rendering="crispEdges">'
+        f'{_vectorize(path, AVATAR_D, AVATAR_COLOURS)}</g>'
         f'<circle cx="{n(cx)}" cy="{n(cy)}" r="{n(r - 0.5)}" fill="none" stroke="{c["line"]}"/>'
         f'<circle cx="{n(dot_x)}" cy="{n(dot_y)}" r="7" fill="{c["bg"]}"/>'
         + live_dot(dot_x, dot_y, c, r=4.5)
