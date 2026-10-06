@@ -123,12 +123,12 @@ text.es = "**Formación** — Ingeniería de la Salud en la Universidad de Mála
 # -----------------------------------------------------------------------------
 [stack]
 # Ordenados por bloques: lenguajes · IA · back end · front end · infraestructura
-icons    = ["py", "ts", "js", "html", "css",
+icons    = ["py", "r", "ts", "html", "css",
             "pytorch", "tensorflow", "sklearn",
             "fastapi", "nodejs", "mongodb", "postgres",
             "react", "nextjs", "tailwind",
-            "docker", "githubactions", "git", "linux"]
-per_line = 10
+            "docker", "git", "linux"]
+per_line = 9
 extra_label = { en = "also", es = "también" }
 extra       = ["langgraph", "langchain", "qdrant", "neo4j", "rdf / sparql"]
 
