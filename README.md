@@ -3,19 +3,41 @@
   Edit profile.toml instead: manual changes here are overwritten.
 -->
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/header-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/generated/en/header-light.svg">
-  <img src="assets/generated/en/header-dark.svg" width="100%" alt="Alberto Montero">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/header-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/header-light.svg"><img src="assets/generated/en/header-dark.svg" width="100%" alt="Alberto Montero"></picture>
 
 <br>
 
+<p align="center"><sub><a href="https://es.linkedin.com/in/albeertomonterosolera">linkedin</a> &nbsp;·&nbsp; <a href="https://albertomontero.is-a.dev">portfolio</a> &nbsp;·&nbsp; <a href="README.es.md">español</a></sub></p>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/heading-about-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/heading-about-light.svg"><img src="assets/generated/en/heading-about-dark.svg" width="100%" alt="about"></picture>
+
+I build AI systems that do real work: agents, automations and the full stack products around them.
+
+- **Now** — AI & automation intern at **DEKRA**, designing agentic workflows with LangGraph and LangChain.
+- **Build** — React / Next.js front ends, Python and Node back ends, data pipelines that feed the models.
+- **Background** — Health Engineering at the University of Málaga, heading into a Master's in Software Engineering & AI.
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/heading-stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/heading-stack-light.svg"><img src="assets/generated/en/heading-stack-dark.svg" width="100%" alt="stack"></picture>
+
+<p align="center"><a href="https://skillicons.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=py%2Cr%2Cts%2Chtml%2Ccss%2Cpytorch%2Ctensorflow%2Csklearn%2Cfastapi%2Cnodejs%2Cmongodb%2Cpostgres%2Creact%2Cnextjs%2Ctailwind%2Cdocker%2Cgit%2Clinux&perline=9&theme=dark"><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=py%2Cr%2Cts%2Chtml%2Ccss%2Cpytorch%2Ctensorflow%2Csklearn%2Cfastapi%2Cnodejs%2Cmongodb%2Cpostgres%2Creact%2Cnextjs%2Ctailwind%2Cdocker%2Cgit%2Clinux&perline=9&theme=light"><img src="https://skillicons.dev/icons?i=py%2Cr%2Cts%2Chtml%2Ccss%2Cpytorch%2Ctensorflow%2Csklearn%2Cfastapi%2Cnodejs%2Cmongodb%2Cpostgres%2Creact%2Cnextjs%2Ctailwind%2Cdocker%2Cgit%2Clinux&perline=9&theme=dark" alt="py, r, ts, html, css, pytorch, tensorflow, sklearn, fastapi, nodejs, mongodb, postgres, react, nextjs, tailwind, docker, git, linux"></picture></a></p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/stack-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/stack-light.svg"><img src="assets/generated/en/stack-dark.svg" width="100%" alt="langgraph, langchain, qdrant, neo4j, rdf / sparql"></picture>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/heading-projects-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/heading-projects-light.svg"><img src="assets/generated/en/heading-projects-dark.svg" width="100%" alt="work"></picture>
+
 <p align="center">
-  know more about me at <br><br>
-  <b><a href="https://es.linkedin.com/in/albeertomonterosolera">linkedin</a></b>
-  &nbsp;&nbsp;—&nbsp;&nbsp;
-  <b><a href="https://albertomontero.is-a.dev">portfolio</a></b>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/project-Alcolens-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/project-Alcolens-light.svg"><img src="assets/generated/en/project-Alcolens-dark.svg" width="49%" alt="Alcolens"></picture>
+<a href="https://github.com/monteero13/edowl"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/project-edowl-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/project-edowl-light.svg"><img src="assets/generated/en/project-edowl-dark.svg" width="49%" alt="edowl"></picture></a>
+<a href="https://github.com/monteero13/No-BNo-Good"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/project-No-BNo-Good-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/project-No-BNo-Good-light.svg"><img src="assets/generated/en/project-No-BNo-Good-dark.svg" width="49%" alt="No-BNo-Good"></picture></a>
+<a href="https://github.com/monteero13/Neo-Biotic"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/en/project-Neo-Biotic-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/generated/en/project-Neo-Biotic-light.svg"><img src="assets/generated/en/project-Neo-Biotic-dark.svg" width="49%" alt="Neo-Biotic"></picture></a>
 </p>
 
-<p align="center"><sub><a href="README.es.md">español</a></sub></p>
+<br>
+
+<p align="center"><sub>built from profile.toml · @monteero13</sub></p>
