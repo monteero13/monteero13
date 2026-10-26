@@ -40,15 +40,27 @@ def _banner(cfg, loc, lang, ctx):
 
 
 def _links(cfg, loc, lang, ctx):
-    items = [f'<a href="{link["url"]}">{loc(link["label"])}</a>' for link in cfg.get("links", [])]
     opts = cfg.get("links_options", {})
-    if opts.get("language_switch", True):
-        names = cfg.profile.get("language_names", {})
-        items += [f'<a href="{cfg.readme_name(o)}">{names.get(o, o).lower()}</a>'
-                  for o in cfg.languages if o != lang]
-    if opts.get("visitor_counter"):
-        items.append(f'<img src="https://komarev.com/ghpvc/?username={cfg.username}'
-                     f'&style=flat-square&color=30363d&label=views" alt="views" align="center">')
+    names = cfg.profile.get("language_names", {})
+    switch = [f'<a href="{cfg.readme_name(o)}">{names.get(o, o).lower()}</a>'
+              for o in cfg.languages if o != lang] if opts.get("language_switch", True) else []
+    counter = ([f'<img src="https://komarev.com/ghpvc/?username={cfg.username}'
+                f'&style=flat-square&color=30363d&label=views" alt="views" align="center">']
+               if opts.get("visitor_counter") else [])
+
+    intro = loc(opts.get("intro", ""))
+    if intro:
+        # "know more about me at" + bold links, language switch on its own line
+        links = "\n  &nbsp;&nbsp;—&nbsp;&nbsp;\n".join(
+            f'  <b><a href="{link["url"]}">{loc(link["label"])}</a></b>' for link in cfg.get("links", []))
+        out = f'<p align="center">\n  {intro} <br><br>\n{links}\n</p>'
+        extra = switch + counter
+        if extra:
+            out += f'\n\n<p align="center"><sub>{" &nbsp;·&nbsp; ".join(extra)}</sub></p>'
+        return out
+
+    items = [f'<a href="{link["url"]}">{loc(link["label"])}</a>' for link in cfg.get("links", [])]
+    items += switch + counter
     return f'<p align="center"><sub>{" &nbsp;·&nbsp; ".join(items)}</sub></p>' if items else ""
 
 

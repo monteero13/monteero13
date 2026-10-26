@@ -20,8 +20,8 @@ languages      = ["en", "es"]
 language_names = { en = "English", es = "Español" }
 
 # Orden de las secciones. Quita una línea para ocultarla.
-# Disponibles también: "skills" (genoma de habilidades) y "vitals" (estadísticas).
-sections = ["banner", "links", "about", "stack", "projects", "footer"]
+# Disponibles: "banner", "links", "about", "stack", "projects", "skills", "vitals", "footer"
+sections = ["banner", "links"]
 
 # -----------------------------------------------------------------------------
 #  Estilo. Minimalista: fondo nativo de GitHub, tipografía mono, un tono
@@ -95,6 +95,9 @@ url   = "https://albertomontero.is-a.dev"
 # url   = "mailto:tu@correo.com"
 
 [links_options]
+# Texto sobre los enlaces (los muestra en negrita separados por "—").
+# Bórralo para volver a la línea compacta "linkedin · portfolio".
+intro = { en = "know more about me at", es = "conoce más sobre mí en" }
 language_switch = true
 visitor_counter = false
 
